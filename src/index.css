@@ -1,13 +1,94 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 15px;
+}
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.user-box {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+.user-box b,
+.user-box p {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.user-box b {
+  font-weight: bold;
+}
+.img {
+  width: 250px;
+  height: 200px;
+}
+.user-details {
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+  gap: 10px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  width: 80%;
+}
+.info,
+.address {
+  padding: 10px;
+  border: solid 2px black;
+  height: auto;
+}
+b,
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+h1 {
+  font-size: 30px;
+}
+.user-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  height: auto;
+}
+.friends {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prev-username {
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.prev-username a {
+  font-size: 20px;
+  color: #6082b6;
+}
+@media only screen and (max-width: 970px) {
+  .user-details {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 350px;
+  }
+  .info,
+  .address {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 554px) {
+  .friends {
+    justify-content: center;
+  }
 }
