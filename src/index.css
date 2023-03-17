@@ -91,4 +91,7 @@ h1 {
   .friends {
     justify-content: center;
   }
+  .App {
+    justify-content: center;
+  }
 }
